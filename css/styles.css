@@ -30,3 +30,11 @@ body, html {
 	height: 300vh;
 }
 
+.navBar { display:none; }
+
+/* Desktop*/
+@media screen and (max-width: 768px) {
+  .sidebar  { display: none; }
+  .navBar { display: block; }
+  .sidebar { flex-grow: 2; }
+}
