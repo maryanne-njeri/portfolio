@@ -7,30 +7,26 @@ body, html {
 	box-sizing: border-box;
 }
 
-section {
+.container {
 	display: flex;
 	height: 100vh;
 }
 
-.item {
-	/*border: 1px solid red;*/
-}
-
-.item1 {
+.sidebar {
 	flex-grow: 1;
 	overflow-y: scroll;
 }
 
-.item1 div {
+.sidebar div {
 	height: 110vh;
 }
 
-.item2 {
+.main-content {
 	flex-grow: 5;
 	overflow: auto;
 }
 
-.item2 div {
+.main-content div {
 	height: 300vh;
 }
 
