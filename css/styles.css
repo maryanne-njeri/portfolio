@@ -1,0 +1,36 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+body, html {
+	box-sizing: border-box;
+}
+
+section {
+	display: flex;
+	height: 100vh;
+}
+
+.item {
+	/*border: 1px solid red;*/
+}
+
+.item1 {
+	flex-grow: 1;
+	overflow-y: scroll;
+}
+
+.item1 div {
+	height: 110vh;
+}
+
+.item2 {
+	flex-grow: 5;
+	overflow: auto;
+}
+
+.item2 div {
+	height: 300vh;
+}
+
