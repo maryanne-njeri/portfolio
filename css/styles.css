@@ -7,22 +7,47 @@ body, html {
 	box-sizing: border-box;
 }
 
+body {
+    font-family: "Quicksand", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.8;
+    color: rgba(0, 0, 0, 0.7);
+}
+
 .container {
 	display: flex;
 	height: 100vh;
 }
 
 .sidebar {
-	flex-grow: 1;
+	flex-grow: 4;
 	overflow-y: scroll;
+	background-color: #F2F3F7;
+	padding: 40px 30px;
+	max-width: 20%;
 }
 
 .sidebar div {
-	height: 110vh;
+	height: 50vh;
+}
+
+aside div div img	{
+	border-radius: 50%;
+	opacity: .8;
+	width: 150px;
+
+}
+
+.footer {
+	text-align: center;
+	color: #A7A8AB;
+	margin-top: 50px;
+	margin-bottom: 40px;
 }
 
 .main-content {
-	flex-grow: 5;
+	flex-grow: 4;
 	overflow: auto;
 }
 
@@ -30,11 +55,57 @@ body, html {
 	height: 300vh;
 }
 
-.navBar { display:none; }
+.toggleButton { display:none; }
 
-/* Desktop*/
 @media screen and (max-width: 768px) {
   .sidebar  { display: none; }
-  .navBar { display: block; }
-  .sidebar { flex-grow: 2; }
+  .toggleButton { display: block; }
+}
+
+@media screen and (max-width: 992px)
+	body {
+	    font-size: 16px;
+}
+
+h3 {
+	text-align: center;
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: .5em;
+    width: 100%;
+    margin-top: 30px;
+    /*padding-bottom: 5px;*/
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.career {
+    text-align: center;
+    color: #7F8082;
+    margin-bottom: 20px;
+}
+
+ul li a {
+	color: rgba(0, 0, 0, 0.7);
+}
+
+li {
+	list-style-type: none;
+	text-align: center;
+	padding: 10px;
+}
+
+li .unique {
+	text-decoration: underline;
+}
+
+a:link {
+	text-decoration: none;
+}
+
+a:hover {
+	border-top: none;
+	border-right: none;
+	border-bottom: 2px solid gray;
+	border-left: none;
+	color: #5E5E60;
 }

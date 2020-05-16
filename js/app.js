@@ -1,4 +1,4 @@
-function toggleMenu() {
+function toggleAside() {
 	let toggle = document.getElementById('navBar');
 
 	if (toggle.style.display === "none") {
