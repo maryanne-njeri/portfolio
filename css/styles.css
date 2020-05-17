@@ -159,7 +159,6 @@ a:hover {
     letter-spacing: 5px;
     line-height: 1.8;
     font-family: "Playfair Display", Georgia, serif;
-    /*position: relative;*/
 }
 
 .about-content {
@@ -170,15 +169,20 @@ a:hover {
 }
 
 
-.toggleButton { display:none; }
-
-@media screen and (max-width: 768px) {
-  .sidebar  { display: none; }
-  .toggleButton { display: block; }
+.toggleButton { 
+	display:none;
 }
 
-@media screen and (max-width: 992px)
-	body {
-	    font-size: 16px;
-}
+@media screen and (min-width: 960px) {
+  .sidebar  { 
+  	display: none;
+  }
 
+  .toggleButton { 
+  	display: block;
+  }
+
+  body {
+  	font-size: 16px;
+  }
+}
