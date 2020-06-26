@@ -29,11 +29,15 @@ body {
 }
 
 .sidebar div {
+	display: flex; 
+	flex-direction: column; 
+	align-items: center;
 	height: 50vh;
 }
 
 aside div div img	{
 	border-radius: 50%;
+	color: white;
 	opacity: .8;
 	width: 150px;
 
@@ -65,11 +69,11 @@ li {
 	text-align: center;
 	padding: 10px;
 }
-
+/*
 li .unique {
 	text-decoration: underline;
 }
-
+*/
 a:link {
 	text-decoration: none;
 }
@@ -100,8 +104,17 @@ a:hover {
 	height: 100vh;
 }
 
+.toggleButton {
+	color: white; 
+	padding: 10px; 
+	background-color: #49556B; 
+	z-index: 1; 
+	border-radius: 4px; 
+	margin: 2px;
+}
+
 .home-content-container {
-	display: flex; 
+	display: flex;  
 	flex-direction: column; 
 	justify-content: center;
 	color: white;
@@ -139,6 +152,15 @@ a:hover {
 	border-radius: 2px;
 }
 
+/*styling button */
+.click-button {
+	cursor: pointer;
+}
+
+.click-button a {
+	color: white;
+}
+	
 /*About*/
 .title-about {
 	margin-bottom: 15px;
@@ -161,6 +183,10 @@ a:hover {
     font-family: "Playfair Display", Georgia, serif;
 }
 
+.about-image {
+	border-radius: 50%;
+}
+
 .about-content {
 	margin-block-start: 1em;
     margin-block-end: 1em;
@@ -168,9 +194,41 @@ a:hover {
     margin-inline-end: 0px;
 }
 
+.contact-form {
+	justify-content: center;
+	
+}
+
+.form-border {
+	border: 1px solid grey;
+}
+
+.input-space {
+	display: inline-block;
+	background-color: #F2F3F7;
+	color: #B0B0B1;
+	border-top: none;
+	border-right: none;
+	border-bottom: none;
+	border-left: none;
+	padding: 15px;	
+	padding-left: 5px;
+	margin: 10px;
+	line-height: 2;
+	text-align: center;
+}
+/*
+.input-message {
+	width: 10%
+}
+
+.myHeading {
+	text-underline-offset: 0.5em;
+}*/
 
 .toggleButton { 
-	display:none;
+	display: none;
+	position: fixed;
 }
 
 @media screen and (min-width: 960px) {
